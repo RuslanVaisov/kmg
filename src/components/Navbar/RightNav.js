@@ -13,23 +13,23 @@ const RightNav = ({ Toggle }) => {
         }}
       >
         <li>
-          <a href="#home">HOME</a>
+          <a href="/">HOME</a>
         </li>
         <li>
-          <a href="#services">SERVICES</a>
+          <a href="/">SERVICES</a>
         </li>
         <li>
-          <a href="#about">ABOUT US</a>
+          <a href="/">ABOUT US</a>
         </li>
 
         <li>
-          <a href="#contact">CONTACT</a>
+          <a href="/">CONTACT</a>
         </li>
         <li>
           <NavLink to="/calculator">CALCULATOR</NavLink>
         </li>
         <li className="nav-forms">
-          <a className="nav-forms-btn" href="#">
+          <a className="nav-forms-btn" href="/">
             FORMS
           </a>
           <img src={arrowBottom} alt="arrow-bottom" />

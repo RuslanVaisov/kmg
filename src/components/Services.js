@@ -53,19 +53,19 @@ const Services = () => {
               stopOnHover={false}
             >
               <div>
-                <img src={air1} />
+                <img alt="kmg-service" src={air1} />
               </div>
               <div>
-                <img src={air2} />
+                <img alt="kmg-service" src={air2} />
               </div>
               <div>
-                <img src={air3} />
+                <img alt="kmg-service" src={air3} />
               </div>
               <div>
-                <img src={air4} />
+                <img alt="kmg-service" src={air4} />
               </div>
               <div>
-                <img src={air5} />
+                <img alt="kmg-service" src={air5} />
               </div>
             </Carousel>
             <h3>Air Freight Services</h3>
@@ -86,19 +86,19 @@ const Services = () => {
               stopOnHover={false}
             >
               <div>
-                <img src={ocean1} />
+                <img alt="kmg-service" src={ocean1} />
               </div>
               <div>
-                <img src={ocean2} />
+                <img alt="kmg-service" src={ocean2} />
               </div>
               <div>
-                <img src={ocean3} />
+                <img alt="kmg-service" src={ocean3} />
               </div>
               <div>
-                <img src={ocean4} />
+                <img alt="kmg-service" src={ocean4} />
               </div>
               <div>
-                <img src={ocean5} />
+                <img alt="kmg-service" src={ocean5} />
               </div>
             </Carousel>
             <h3>Ocean</h3>
@@ -118,19 +118,19 @@ const Services = () => {
               stopOnHover={false}
             >
               <div>
-                <img src={freight1} />
+                <img alt="kmg-service" src={freight1} />
               </div>
               <div>
-                <img src={freight2} />
+                <img alt="kmg-service" src={freight2} />
               </div>
               <div>
-                <img src={freight3} />
+                <img alt="kmg-service" src={freight3} />
               </div>
               <div>
-                <img src={freight4} />
+                <img alt="kmg-service" src={freight4} />
               </div>
               <div>
-                <img src={freight5} />
+                <img alt="kmg-service" src={freight5} />
               </div>
             </Carousel>
             <h3>Freight Forwarding</h3>
@@ -151,19 +151,19 @@ const Services = () => {
               stopOnHover={false}
             >
               <div>
-                <img src={domestic1} />
+                <img alt="kmg-service" src={domestic1} />
               </div>
               <div>
-                <img src={domestic2} />
+                <img alt="kmg-service" src={domestic2} />
               </div>
               <div>
-                <img src={domestic3} />
+                <img alt="kmg-service" src={domestic3} />
               </div>
               <div>
-                <img src={domestic4} />
+                <img alt="kmg-service" src={domestic4} />
               </div>
               <div>
-                <img src={domestic5} />
+                <img alt="kmg-service" src={domestic5} />
               </div>
             </Carousel>
             <h3>Domestic Freight & Shipping</h3>
@@ -181,19 +181,19 @@ const Services = () => {
               stopOnHover={false}
             >
               <div>
-                <img src={car1} />
+                <img alt="kmg-service" src={car1} />
               </div>
               <div>
-                <img src={car2} />
+                <img alt="kmg-service" src={car2} />
               </div>
               <div>
-                <img src={car3} />
+                <img alt="kmg-service" src={car3} />
               </div>
               <div>
-                <img src={car4} />
+                <img alt="kmg-service" src={car4} />
               </div>
               <div>
-                <img src={car5} />
+                <img alt="kmg-service" src={car5} />
               </div>
             </Carousel>
             <h3>Used & New Cars</h3>
