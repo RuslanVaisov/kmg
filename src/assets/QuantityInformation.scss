@@ -1,0 +1,59 @@
+.request-a-quote {
+  width: 60%;
+
+  .unit-type {
+    margin: 0 auto;
+
+    input[type="checkbox"] {
+      width: 50px;
+    }
+
+    .unit-type-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 0.5rem;
+      align-items: center;
+      justify-content: center;
+
+      label {
+        font-size: 0.8rem;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .request-a-quote {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .request-a-quote {
+    .unit-type {
+      margin: 0 auto;
+
+      input[type="checkbox"] {
+        width: 50px;
+      }
+
+      .unit-type-row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0.5rem;
+        align-items: center;
+        justify-content: center;
+
+        .col-1 {
+          margin-top: 2rem;
+        }
+
+        label {
+          font-size: 0.8rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

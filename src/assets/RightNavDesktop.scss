@@ -1,0 +1,118 @@
+.nav-content-desktop {
+  display: flex;
+  align-items: center;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+
+    li {
+      padding: 0 1rem;
+      list-style: none;
+      font-weight: 600;
+
+      a {
+        text-decoration: none;
+        outline: none;
+        color: #111;
+      }
+    }
+
+    .nav-forms {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        margin: 0 0.5rem;
+      }
+
+      .nav-forms-content {
+        display: none;
+        flex-direction: column;
+        padding: 0;
+        padding: 0.5rem 0;
+        position: absolute;
+        top: 4rem;
+        right: 0.5rem;
+        text-align: right;
+
+        li {
+          width: 250px;
+          padding: 0.3rem 1rem;
+          margin: 0.1rem 1rem;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 14px;
+          font-weight: 500;
+          background: #111;
+
+          a {
+            color: #fff;
+          }
+
+          &:hover {
+            background: #1e4d99;
+          }
+        }
+      }
+
+      &:hover {
+        .nav-forms-content {
+          display: flex;
+        }
+      }
+    }
+
+    li.nav-forms-two {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-content-desktop {
+    ul {
+      padding: 0.5rem;
+
+      li {
+        padding: 0 0.6rem;
+        font-weight: 500;
+        font-size: 0.8rem;
+      }
+
+      .nav-forms {
+        img {
+          margin: 0 0.5rem;
+          width: 10%;
+        }
+
+        .nav-forms-content {
+          display: none;
+          flex-direction: column;
+          padding: 0;
+          padding: 0.5rem 0;
+          position: absolute;
+          top: 3rem;
+          right: 0;
+
+          li {
+            width: 205px;
+            padding: 0.2rem 0.7rem;
+            font-size: 13px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-content-desktop {
+    ul {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,130 @@
+.showcase {
+  .showcase-container {
+    margin-top: 95px;
+    height: 125vh;
+    width: 100%;
+    background: url("../imgs/showcase.png") no-repeat center center/cover;
+    color: #fff;
+
+    .showcase-content {
+      position: absolute;
+      top: 40%;
+      left: 5%;
+
+      .showcase-content-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h2 {
+          color: #c5c5c5;
+          font-size: 40px;
+          font-weight: 400;
+          padding: 0.5rem;
+        }
+
+        span.showcase-square {
+          display: flex;
+          width: 40px;
+          height: 30px;
+          background: #0aad52;
+        }
+      }
+
+      h1 {
+        font-size: 64px;
+        padding: 0.5rem;
+        border-top: 1px solid #fff;
+        display: inline;
+      }
+
+      .showcase-btn {
+        font-size: 24px;
+        outline: none;
+        border: none;
+        padding: 1rem 1.5rem;
+        margin-top: 2rem;
+        background: #1e4d99;
+        font-weight: bold;
+        cursor: pointer;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .showcase {
+    .showcase-container {
+      margin-top: 75px;
+      height: 125vh;
+      background: url("../imgs/showcase.png") no-repeat center center/cover;
+
+      .showcase-content {
+        .showcase-content-top {
+          h2 {
+            font-size: 25px;
+            font-weight: 400;
+            padding: 0.5rem;
+          }
+
+          span.showcase-square {
+            width: 20px;
+            height: 15px;
+          }
+        }
+
+        h1 {
+          font-size: 40px;
+          padding: 0.5rem;
+        }
+
+        .showcase-btn {
+          font-size: 16px;
+          padding: 1rem 1.5rem;
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .showcase {
+    .showcase-container {
+      margin-top: 75px;
+      height: 125vh;
+      background: url("../imgs/showcase.png") no-repeat center center/cover;
+
+      .showcase-content {
+        .showcase-content-top {
+          h2 {
+            font-size: 1rem;
+            font-weight: 400;
+            padding: 0.5rem;
+          }
+
+          span.showcase-square {
+            width: 15px;
+            height: 10px;
+          }
+        }
+
+        h1 {
+          font-size: 1.5rem;
+          padding: 0.5rem;
+        }
+
+        .showcase-btn {
+          font-size: 0.9rem;
+          padding: 0.5rem 1rem;
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
+}

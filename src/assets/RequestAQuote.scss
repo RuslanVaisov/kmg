@@ -1,0 +1,218 @@
+.request-a-quote {
+  width: 50%;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+    margin: 4rem 0;
+  }
+
+  form {
+    input {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+    }
+    textarea {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+    }
+
+    label {
+      font-weight: 500;
+    }
+
+    h2 {
+      margin: 2rem 0;
+    }
+
+    .shipment-details {
+      h4 {
+        margin: 1rem 0;
+      }
+    }
+
+    .destination-country {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      .destination-country-left {
+        display: flex;
+        flex-direction: column;
+
+        input {
+          width: 50px;
+        }
+      }
+    }
+
+    .request-a-quote-buttom-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 4rem;
+
+      .request-a-quote-buttom-row-left,
+      .request-a-quote-buttom-row-right {
+        p {
+          text-align: justify;
+        }
+      }
+
+      .request-a-quote-buttom-row-left > div,
+      .request-a-quote-buttom-row-right > div {
+        display: flex;
+        align-items: center;
+        margin: 2rem 0;
+
+        input {
+          width: 50px;
+          margin: 0;
+        }
+      }
+    }
+
+    .request-a-quote-buttom-bottom {
+      display: flex;
+      align-items: center;
+      margin: 2rem 0;
+
+      p {
+        text-align: justify;
+      }
+
+      input {
+        width: 50px;
+        margin: 0;
+      }
+    }
+
+    .quote-initials {
+      margin-top: 4rem;
+      width: 50%;
+    }
+
+    button {
+      background: #1e4d99;
+      color: #fff;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      margin: 1rem 0 6rem 0;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .request-a-quote {
+    width: 85%;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+
+  .request-a-quote form button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .request-a-quote {
+    width: 85%;
+
+    h1 {
+      margin: 4rem;
+      font-size: 1rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+
+    form {
+      input {
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+      }
+      textarea {
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+      }
+
+      label {
+        font-weight: 500;
+      }
+
+      h2 {
+        margin: 2rem 0;
+      }
+
+      .shipment-details {
+        h4 {
+          margin: 1rem 0;
+        }
+      }
+
+      .destination-country {
+        grid-template-columns: repeat(1, 1fr);
+
+        .destination-country-left {
+          display: flex;
+          flex-direction: column;
+
+          input {
+            width: 50px;
+          }
+        }
+      }
+
+      .request-a-quote-buttom-row {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2rem;
+        margin-bottom: 4rem;
+
+        .request-a-quote-buttom-row-left > div,
+        .request-a-quote-buttom-row-right > div {
+          display: flex;
+          align-items: center;
+          margin: 2rem 0;
+
+          input {
+            width: 50px;
+            margin: 0;
+          }
+        }
+      }
+
+      .request-a-quote-buttom-bottom {
+        margin: 2rem 0;
+
+        input {
+          width: 50px;
+          margin: 0;
+        }
+      }
+
+      .quote-initials {
+        margin-top: 4rem;
+        width: 100%;
+      }
+
+      button {
+        background: #1e4d99;
+        color: #fff;
+        border: none;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        margin: 1rem 0 6rem 0;
+      }
+    }
+  }
+}
