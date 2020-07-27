@@ -114,7 +114,7 @@ const CRInformation = () => {
             <input type="text" />
           </div>
 
-          <button>SUBMIT FOR QUOTE</button>
+          <button>SUBMIT</button>
         </form>
       </div>
       <Footer />

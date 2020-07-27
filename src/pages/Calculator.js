@@ -30,10 +30,8 @@ const Calculator = () => {
             <form className="calculator-table-left">
               <div className="port-of-departure">
                 <label htmlFor="port of departure">Port of Departure:</label>
-                <select id="portOfDeparture">
-                  <option value="1" selected>
-                    New York, NJ
-                  </option>
+                <select defaultValue="New York, NJ" id="portOfDeparture">
+                  <option value="1">New York, NJ</option>
                   <option value="2">Jacksonville, FL</option>
                   <option value="3">Los Angeles, CA</option>
                   <option value="4">Houston, TX</option>
@@ -47,7 +45,7 @@ const Calculator = () => {
               </div>
               <div className="calculator-country">
                 <label htmlFor="country">Destination Country:</label>
-                <select id="country">
+                <select defaultValue="Uzbekistan" id="country">
                   <option value="4">Afghanistan</option>
                   <option value="5">Albania</option>
                   <option value="6">Algeria</option>
@@ -195,9 +193,7 @@ const Calculator = () => {
                   <option value="215">United Arab Emirates</option>
                   <option value="3">United Kingdom</option>
                   <option value="216">Uruguay</option>
-                  <option value="217" selected>
-                    Uzbekistan
-                  </option>
+                  <option value="217">Uzbekistan</option>
                   <option value="218">Vanuatu</option>
                   <option value="219">Venezuela</option>
                   <option value="220">Vietnam</option>

@@ -1,11 +1,15 @@
 .calculator-content {
   width: 80%;
   margin: 0 auto;
+  margin-top: 10rem;
 
   h1 {
-    margin-top: 4rem;
     margin-bottom: 2rem;
     text-align: center;
+  }
+
+  p {
+    text-align: justify;
   }
 
   .calculator-table {
@@ -168,6 +172,7 @@
 
 @media (max-width: 768px) {
   .calculator-content {
+    margin-top: 8rem;
     h1 {
       margin-top: 3rem;
       margin-bottom: 1rem;

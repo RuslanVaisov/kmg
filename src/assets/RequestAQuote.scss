@@ -1,6 +1,7 @@
 .request-a-quote {
   width: 50%;
   margin: 0 auto;
+  margin-top: 10rem;
 
   h1 {
     text-align: center;
@@ -44,6 +45,12 @@
         input {
           width: 50px;
         }
+      }
+    }
+
+    .request-a-quote-buttom {
+      p {
+        text-align: justify;
       }
     }
 
@@ -125,6 +132,7 @@
 @media (max-width: 768px) {
   .request-a-quote {
     width: 85%;
+    margin-top: 8rem;
 
     h1 {
       margin: 4rem;
