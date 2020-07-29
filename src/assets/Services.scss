@@ -25,6 +25,7 @@
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 2rem;
     margin-bottom: 10rem;
+    align-items: flex-start;
 
     .services-row-item {
       display: flex;
@@ -45,7 +46,7 @@
 
       p {
         font-size: 0.9rem;
-        text-align: center;
+        text-align: justify;
         color: #707070;
       }
     }

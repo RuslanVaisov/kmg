@@ -1,5 +1,6 @@
 .showcase {
   .showcase-container {
+    position: relative;
     margin-top: 95px;
     height: 125vh;
     width: 100%;
@@ -8,16 +9,17 @@
 
     .showcase-content {
       position: absolute;
-      top: 40%;
+      top: 20%;
       left: 5%;
 
       .showcase-content-top {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        max-width: 700px;
 
         h2 {
-          color: #c5c5c5;
+          color: #f4f4f4;
           font-size: 40px;
           font-weight: 400;
           padding: 0.5rem;
@@ -52,6 +54,19 @@
           text-decoration: none;
           color: #fff;
         }
+      }
+    }
+    .showcase-text {
+      position: absolute;
+      top: 60%;
+      max-width: 80%;
+      left: 10%;
+      background: #0aad52;
+      padding: 1rem;
+      border-radius: 5px;
+
+      p {
+        font-size: 1rem;
       }
     }
   }
@@ -89,6 +104,19 @@
           margin-top: 0.5rem;
         }
       }
+      .showcase-text {
+        position: absolute;
+        top: 50%;
+        max-width: 70%;
+        left: 15%;
+        background: #0aad52;
+        padding: 1rem;
+        border-radius: 5px;
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
     }
   }
 }
@@ -123,6 +151,72 @@
           font-size: 0.9rem;
           padding: 0.5rem 1rem;
           margin-top: 0.5rem;
+        }
+      }
+      .showcase-text {
+        position: absolute;
+        top: 45%;
+        max-width: 70%;
+        left: 15%;
+        background: #0aad52;
+        padding: 1rem;
+        border-radius: 5px;
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .showcase {
+    .showcase-container {
+      margin-top: 75px;
+      height: 125vh;
+      background: url("../imgs/showcase.png") no-repeat center center/cover;
+
+      .showcase-content {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+
+        .showcase-content-top {
+          h2 {
+            font-size: 1rem;
+            font-weight: 400;
+            padding: 0.5rem;
+          }
+
+          span.showcase-square {
+            width: 15px;
+            height: 10px;
+          }
+        }
+
+        h1 {
+          font-size: 1.5rem;
+          padding: 0.5rem;
+        }
+
+        .showcase-btn {
+          font-size: 0.9rem;
+          padding: 0.5rem 1rem;
+          margin-top: 0.5rem;
+        }
+      }
+      .showcase-text {
+        position: absolute;
+        top: 30%;
+        max-width: 90%;
+        left: 5%;
+        background: #0aad52;
+        padding: 1rem;
+        border-radius: 5px;
+
+        p {
+          font-size: 0.9rem;
         }
       }
     }

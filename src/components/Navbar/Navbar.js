@@ -7,7 +7,6 @@ import logo from "../../imgs/logo.png";
 import RightNav from "./RightNav";
 import RightNavDesktop from "./RightNavDesktop";
 import whatsapp from "../../imgs/whatsapp.png";
-import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -27,9 +26,7 @@ const Navbar = () => {
       <section className="navbar">
         <nav>
           <div className="nav-logo">
-            <NavLink to="/">
-              <img src={logo} alt="" />
-            </NavLink>
+            <img src={logo} alt="" />
           </div>
           <div className="right-nav-container">
             <RightNav open={open} Toggle={Toggle} />

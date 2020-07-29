@@ -70,8 +70,14 @@ const Services = () => {
             </Carousel>
             <h3>Air Freight Services</h3>
             <p>
-              We offer Air freight services with the flexibility to meet your
-              changing needs.
+              KMG Global LLC has strategic partnership agreements with a wide
+              number of air operators. Due to trust and experience we have
+              developed throughout years, we are able to secure fast and
+              cost-efficient air freight service to any part of the world, be
+              that for smaller shipments on consolidation basis, as well as
+              large volumes which require part or full charter flights. Among
+              the equipment we have access to are such aircraft as B-777, B-747,
+              A-300, IL-76, AN-12, etc.
             </p>
           </div>
           <div className="services-row-item">
@@ -103,7 +109,13 @@ const Services = () => {
             </Carousel>
             <h3>Ocean</h3>
             <p>
-              We have experienced personnel with professional equipment systems.
+              Throughout years of operation we have developed close partnership
+              with ocean operators which enables us to secure space and rates on
+              major liners and their routes. We have a wide networks of cargo
+              handling agents in CONUS ports as well as around the world, so
+              that you do not have to worry about any details such as
+              containerization and de-containerization, loading and offloading,
+              pick-up and delivery, etc.
             </p>
           </div>
           <div className="services-row-item">
@@ -133,10 +145,13 @@ const Services = () => {
                 <img alt="kmg-service" src={freight5} />
               </div>
             </Carousel>
-            <h3>Freight Forwarding</h3>
+            <h3>Surface Transportation</h3>
             <p>
-              We offer freight forwarding by organizing shipments for companies
-              and individuals.
+              At KMG Global LLC we have access to a wide network of surface
+              transportation operators around the world, be that all ranges of
+              trucking equipment and/or railroad. Wherever is the destination of
+              your cargo, we can get it there as fast as possible at the lowest
+              rates available in the market.
             </p>
           </div>
           <div className="services-row-item">
@@ -167,7 +182,13 @@ const Services = () => {
               </div>
             </Carousel>
             <h3>Domestic Freight & Shipping</h3>
-            <p>We provide reliable Domestic Household Goods Pickup Services.</p>
+            <p>
+              For KMG Global LLC, one of the most covered geographic areas is
+              CONUS. We have over 4,000 trucks constantly rotating around the
+              cities and states of the country. Whatever cargo you have and
+              whenever you need it to be picked up and/or delivered, we can find
+              the best solution and provide the highest quality service.
+            </p>
           </div>
           <div className="services-row-item">
             <Carousel
