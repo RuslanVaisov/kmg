@@ -5,7 +5,7 @@ import "../assets/Footer.scss";
 import logo from "../imgs/logo.png";
 import facebook from "../imgs/facebook.png";
 import instagram from "../imgs/instagram.png";
-import twitter from "../imgs/twitter.png";
+import linkedin from "../imgs/linkedin.png";
 
 const Footer = () => {
   return (
@@ -17,14 +17,26 @@ const Footer = () => {
         <p>© 2020. All rights reserved.</p>
       </div>
       <div className="social-media">
-        <a href="/">
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={facebook} alt="facebook" />
         </a>
-        <a href="/">
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={instagram} alt="instagram" />
         </a>
-        <a href="/">
-          <img src={twitter} alt="twitter" />
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={linkedin} alt="linkedin" />
         </a>
       </div>
     </footer>

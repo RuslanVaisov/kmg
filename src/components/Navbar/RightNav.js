@@ -25,9 +25,9 @@ const RightNav = ({ Toggle }) => {
         <li>
           <a href="/">CONTACT</a>
         </li>
-        <li>
+        {/* <li>
           <NavLink to="/calculator">CALCULATOR</NavLink>
-        </li>
+        </li> */}
         <li className="nav-forms">
           <a className="nav-forms-btn" href="/">
             FORMS
