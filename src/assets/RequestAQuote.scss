@@ -1,3 +1,9 @@
+.form-error {
+  color: red;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
 .request-a-quote {
   width: 50%;
   margin: 0 auto;
@@ -11,13 +17,30 @@
   form {
     input {
       width: 100%;
-      margin-bottom: 1rem;
       padding: 0.5rem;
+      border-radius: 5px;
+      border: #111 1px solid;
+      outline: none;
+
+      &:focus {
+        border: #1e4d99 2px solid;
+        border-radius: 5px;
+        background: #e9eff8;
+      }
     }
     textarea {
       width: 100%;
       margin-bottom: 1rem;
       padding: 0.5rem;
+      border-radius: 5px;
+      border: #111 1px solid;
+      outline: none;
+
+      &:focus {
+        border: #1e4d99 2px solid;
+        border-radius: 5px;
+        background: #e9eff8;
+      }
     }
 
     label {
@@ -26,6 +49,15 @@
 
     h2 {
       margin: 2rem 0;
+    }
+
+    .shipper-name > div,
+    .address > div,
+    .pick-up-from > div,
+    .destination > div,
+    .receiver-info > div,
+    .disclaimer-bottom > div {
+      margin-top: 1rem;
     }
 
     .shipment-details {
@@ -45,6 +77,10 @@
         input {
           width: 50px;
         }
+      }
+
+      .destination-country-right > div {
+        margin-top: 1rem;
       }
     }
 

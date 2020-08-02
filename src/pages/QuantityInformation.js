@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useForm } from "react-hook-form";
+import axios from "axios";
 import PagesNav from "../components/Navbar/PagesNav";
 import Footer from "../components/Footer";
 
@@ -7,57 +9,203 @@ import Footer from "../components/Footer";
 import "../assets/QuantityInformation.scss";
 
 const QuantityInformation = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const { register, handleSubmit, errors } = useForm();
+
+  const onSubmit = (data) => {
+    axios({
+      method: "POST",
+
+      // enter the url here
+      url: "/api/quantity-information",
+
+      data,
+    }).then((response) => {
+      if (response.status === 200) {
+        alert("Thanks for your application!");
+      } else if (response.data.status === "fail") {
+        alert("Error in sending the application, please try again...");
+      }
+      console.log(response);
+    });
+  };
+
   return (
     <>
       <PagesNav />
       <div className="request-a-quote">
         <h1>QUANTITY INFORMATION</h1>
-        <form>
+        <form onSubmit={handleSubmit(onSubmit)}>
           <h2>Name</h2>
           <div className="shipper-name">
             <div>
               <label htmlFor="First">First</label>
-              <input type="text" />
+              <input
+                name="first"
+                type="text"
+                ref={register({ required: true })}
+              />
+              {errors.first && (
+                <span className="form-error">Please enter your first name</span>
+              )}
             </div>
             <div>
               <label htmlFor="Last">Last</label>
-              <input type="text" />
+              <input
+                name="last"
+                type="text"
+                ref={register({ required: true })}
+              />
+              {errors.last && (
+                <span className="form-error">Please enter your last name</span>
+              )}
             </div>
           </div>
           <h2>Address</h2>
           <div className="address">
-            <label htmlFor="Street Address">Street Address</label>
-            <input type="text" />
-            <label htmlFor="Address Line 2">Address Line 2</label>
-            <input type="text" />
-            <label htmlFor="City">City</label>
-            <input type="text" />
-            <label htmlFor="State / Province / Region">
-              State / Province / Region
-            </label>
-            <input type="text" />
-            <label htmlFor="ZIP / Postal Code">ZIP / Postal Code</label>
-            <input type="text" />
-            <label htmlFor="Email">Email</label>
-            <input type="text" />
-            <label htmlFor="Phone">Phone</label>
-            <input type="text" />
+            <div>
+              <label htmlFor="Street Address">Street Address</label>
+              <input
+                name="address"
+                type="text"
+                ref={register({ required: true })}
+              />
+              {errors.address && (
+                <span className="form-error">Please enter your address</span>
+              )}
+            </div>
+            <div>
+              <label htmlFor="Address Line 2">Address Line 2</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label htmlFor="City">City</label>
+              <input
+                name="city"
+                type="text"
+                ref={register({ required: true })}
+              />
+              {errors.city && (
+                <span className="form-error">Please enter your city</span>
+              )}
+            </div>
+            <div>
+              <label htmlFor="State / Province / Region">
+                State / Province / Region
+              </label>
+              <input
+                name="state"
+                type="text"
+                ref={register({ required: true })}
+              />
+              {errors.state && (
+                <span className="form-error">
+                  Please enter your state/province/region
+                </span>
+              )}
+            </div>
+            <div>
+              <label htmlFor="ZIP / Postal Code">ZIP / Postal Code</label>
+              <input
+                name="zip"
+                type="text"
+                ref={register({ required: true })}
+              />
+              {errors.zip && (
+                <span className="form-error">
+                  Please enter your zip/postal code
+                </span>
+              )}
+            </div>
+            <div>
+              <label htmlFor="Email">Email</label>
+              <input
+                name="email"
+                type="text"
+                ref={register({ required: true })}
+              />
+              {errors.email && (
+                <span className="form-error">Please enter your email</span>
+              )}
+            </div>
+            <div>
+              <label htmlFor="Phone">Phone</label>
+              <input
+                name="phone"
+                type="text"
+                ref={register({ required: true })}
+              />
+              {errors.phone && (
+                <span className="form-error">
+                  Please enter your phone number
+                </span>
+              )}
+            </div>
           </div>
           <br />
           <hr />
           <br />
           <h2>Receiver Information</h2>
           <div className="receiver-info">
-            <label htmlFor="First">First</label>
-            <input type="text" />
-            <label htmlFor="Last">Last</label>
-            <input type="text" />
-            <label htmlFor="Email">Email</label>
-            <input type="text" />
-            <label htmlFor="Receiver Phone">Receiver Phone</label>
-            <input type="text" />
-            <label htmlFor="Alternative Phone">Alternative Phone</label>
-            <input type="text" />
+            <div>
+              <label htmlFor="First">First</label>
+              <input
+                name="first"
+                ref={register({ required: true })}
+                type="text"
+              />
+              {errors.first && (
+                <span className="form-error">
+                  Please enter recipient's first name
+                </span>
+              )}
+            </div>
+            <div>
+              <label htmlFor="Last">Last</label>
+              <input
+                name="last"
+                ref={register({ required: true })}
+                type="text"
+              />
+              {errors.last && (
+                <span className="form-error">
+                  Please enter recipient's last name
+                </span>
+              )}
+            </div>
+            <div>
+              <label htmlFor="Email">Email</label>
+              <input
+                name="email"
+                ref={register({ required: true })}
+                type="text"
+              />
+              {errors.email && (
+                <span className="form-error">
+                  Please enter recipient's email
+                </span>
+              )}
+            </div>
+            <div>
+              <label htmlFor="Receiver Phone">Receiver Phone</label>
+              <input
+                name="phone"
+                ref={register({ required: true })}
+                type="text"
+              />
+              {errors.phone && (
+                <span className="form-error">
+                  Please enter recipient's phone number
+                </span>
+              )}
+            </div>
+            <div>
+              <label htmlFor="Alternative Phone">Alternative Phone</label>
+              <input type="text" />
+            </div>
           </div>
           <br />
           <hr />
@@ -206,7 +354,14 @@ const QuantityInformation = () => {
             <label htmlFor="Type of ID Receive Matching phone on ID:">
               Type of ID Receive Matching phone on ID:
             </label>
-            <input type="text" />
+            <input
+              ref={register({ required: true })}
+              name="initials"
+              type="text"
+            />
+            {errors.initials && (
+              <span className="form-error">Please enter type of ID</span>
+            )}
           </div>
 
           <button>SUBMIT</button>

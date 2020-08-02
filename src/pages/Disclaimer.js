@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useForm } from "react-hook-form";
+import axios from "axios";
 import PagesNav from "../components/Navbar/PagesNav";
 import Footer from "../components/Footer";
 
@@ -6,21 +8,59 @@ import Footer from "../components/Footer";
 import "../assets/Disclaimer.scss";
 
 const Disclaimer = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const { register, handleSubmit, errors } = useForm();
+
+  const onSubmit = (data) => {
+    axios({
+      method: "POST",
+
+      // enter the url here
+      url: "/api/disclaimer",
+
+      data,
+    }).then((response) => {
+      if (response.status === 200) {
+        alert("Thanks for your application!");
+      } else if (response.data.status === "fail") {
+        alert("Error in sending the application, please try again...");
+      }
+      console.log(response);
+    });
+  };
+
   return (
     <>
       <PagesNav />
       <div className="request-a-quote">
         <h1>DISCLAIMER</h1>
-        <form>
+        <form onSubmit={handleSubmit(onSubmit)}>
           <h2>Name</h2>
           <div className="shipper-name">
             <div>
               <label htmlFor="First">First</label>
-              <input type="text" />
+              <input
+                name="first"
+                type="text"
+                ref={register({ required: true })}
+              />
+              {errors.first && (
+                <span className="form-error">Please enter your first name</span>
+              )}
             </div>
             <div>
               <label htmlFor="Last">Last</label>
-              <input type="text" />
+              <input
+                name="last"
+                type="text"
+                ref={register({ required: true })}
+              />
+              {errors.last && (
+                <span className="form-error">Please enter your last name</span>
+              )}
             </div>
           </div>
 
@@ -71,11 +111,25 @@ const Disclaimer = () => {
             <div className="disclaimer-bottom">
               <div>
                 <label htmlFor="Sender">Sender</label>
-                <input type="text" />
+                <input
+                  name="sender"
+                  ref={register({ required: true })}
+                  type="text"
+                />
+                {errors.sender && (
+                  <span className="form-error">Please enter sender's name</span>
+                )}
               </div>
               <div>
                 <label htmlFor="Date">Date</label>
-                <input type="text" />
+                <input
+                  name="date"
+                  ref={register({ required: true })}
+                  type="text"
+                />
+                {errors.date && (
+                  <span className="form-error">Please enter the date</span>
+                )}
               </div>
               <br />
               <br />
@@ -86,11 +140,25 @@ const Disclaimer = () => {
                 <label htmlFor="KTG Shipping International">
                   KTG Shipping International
                 </label>
-                <input type="text" />
+                <input
+                  name="service"
+                  ref={register({ required: true })}
+                  type="text"
+                />
+                {errors.service && (
+                  <span className="form-error">Please fill the form</span>
+                )}
               </div>
               <div>
                 <label htmlFor="Date">Date</label>
-                <input type="text" />
+                <input
+                  name="dateTwo"
+                  ref={register({ required: true })}
+                  type="text"
+                />
+                {errors.dateTwo && (
+                  <span className="form-error">Please enter the date</span>
+                )}
               </div>
             </div>
           </div>

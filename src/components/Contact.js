@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useForm } from "react-hook-form";
+import axios from "axios";
 
 // assets
 
@@ -8,6 +10,30 @@ import maps from "../imgs/maps.png";
 import phone from "../imgs/phone.png";
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const { register, handleSubmit, errors } = useForm();
+
+  const onSubmit = (data) => {
+    axios({
+      method: "POST",
+
+      // enter the url here
+      url: "/api/contacts",
+
+      data,
+    }).then((response) => {
+      if (response.status === 200) {
+        alert("Thanks for your application!");
+      } else if (response.data.status === "fail") {
+        alert("Error in sending the application, please try again...");
+      }
+      console.log(response);
+    });
+  };
+
   return (
     <section className="contact">
       <h1>CONTACT</h1>
@@ -33,13 +59,30 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact-form">
-          <form>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <label htmlFor="Name">Name*</label>
-            <input type="text" />
+            <input name="name" ref={register({ required: true })} type="text" />
+            {errors.name && (
+              <span className="form-error">Please enter your name</span>
+            )}
             <label htmlFor="Email">Email*</label>
-            <input type="text" />
+            <input
+              name="email"
+              ref={register({ required: true })}
+              type="text"
+            />
+            {errors.email && (
+              <span className="form-error">Please enter your email</span>
+            )}
             <label htmlFor="Phone">Phone*</label>
-            <input type="text" />
+            <input
+              name="phone"
+              ref={register({ required: true })}
+              type="text"
+            />
+            {errors.email && (
+              <span className="form-error">Please enter your phone number</span>
+            )}
             <label htmlFor="Message">Message</label>
             <textarea cols="30" rows="10"></textarea>
             <button>SEND</button>

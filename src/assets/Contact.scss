@@ -55,6 +55,15 @@
           height: 2rem;
           padding: 0.5rem;
           font-size: 1rem;
+          border-radius: 5px;
+          border: #111 1px solid;
+          outline: none;
+
+          &:focus {
+            border: #1e4d99 2px solid;
+            border-radius: 5px;
+            background: #e9eff8;
+          }
         }
 
         textarea {
@@ -62,6 +71,23 @@
           margin: 0 auto;
           padding: 0.5rem;
           font-size: 1.5rem;
+          border-radius: 5px;
+          border: #111 1px solid;
+          outline: none;
+
+          &:focus {
+            border: #1e4d99 2px solid;
+            border-radius: 5px;
+            background: #e9eff8;
+          }
+        }
+
+        .form-error {
+          color: red;
+          font-size: 0.8rem;
+          font-weight: 500;
+          width: 80%;
+          margin: 0 auto;
         }
 
         button {
