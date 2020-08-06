@@ -79,7 +79,7 @@ const QuantityInformation = () => {
             </div>
             <div>
               <label htmlFor="Address Line 2">Address Line 2</label>
-              <input type="text" />
+              <input name="addressTwo" type="text" />
             </div>
             <div>
               <label htmlFor="City">City</label>
@@ -153,7 +153,7 @@ const QuantityInformation = () => {
             <div>
               <label htmlFor="First">First</label>
               <input
-                name="first"
+                name="receiverFirst"
                 ref={register({ required: true })}
                 type="text"
               />
@@ -166,7 +166,7 @@ const QuantityInformation = () => {
             <div>
               <label htmlFor="Last">Last</label>
               <input
-                name="last"
+                name="receiverLast"
                 ref={register({ required: true })}
                 type="text"
               />
@@ -179,7 +179,7 @@ const QuantityInformation = () => {
             <div>
               <label htmlFor="Email">Email</label>
               <input
-                name="email"
+                name="receiverEmail"
                 ref={register({ required: true })}
                 type="text"
               />
@@ -192,7 +192,7 @@ const QuantityInformation = () => {
             <div>
               <label htmlFor="Receiver Phone">Receiver Phone</label>
               <input
-                name="phone"
+                name="receiverPhone"
                 ref={register({ required: true })}
                 type="text"
               />
@@ -204,7 +204,7 @@ const QuantityInformation = () => {
             </div>
             <div>
               <label htmlFor="Alternative Phone">Alternative Phone</label>
-              <input type="text" />
+              <input name="receiverAltPhone" type="text" />
             </div>
           </div>
           <br />
@@ -215,7 +215,7 @@ const QuantityInformation = () => {
             <div className="unit-type-row">
               <div>
                 <div className="col-1">
-                  <input type="checkbox" name="Boxes" />
+                  <input type="checkbox" name="boxes" />
                   <label htmlFor="Boxes">Boxes</label>
                 </div>
               </div>
@@ -223,125 +223,125 @@ const QuantityInformation = () => {
                 <label htmlFor="Number of boxes (numbers only)">
                   Number of boxes
                 </label>
-                <input type="text" />
+                <input name="boxesNumber" type="text" />
               </div>
               <div>
                 <label htmlFor="Weight in Ibs (numbers only)">
                   Weight in Ibs (numbers)
                 </label>
-                <input type="text" />
+                <input name="lbsWeight" type="text" />
               </div>
               <div>
                 <label htmlFor="Shipment Description">
                   Shipment Description
                 </label>
-                <input type="text" />
+                <input name="shipmentDescription" type="text" />
               </div>
             </div>
             <div className="unit-type-row">
               <div className="col-1">
-                <input type="checkbox" name=" Barrels/Drums" />
+                <input type="checkbox" name="barrels" />
                 <label htmlFor=" Barrels/Drums">Barrels/Drums</label>
               </div>
               <div>
                 <label htmlFor="Number of Barrels/Drums">
                   Number of Barrels/Drums
                 </label>
-                <input type="text" />
+                <input name="berrelsNumber" type="text" />
               </div>
               <div>
                 <label htmlFor="Weight in lbs">Weight in lbs</label>
-                <input type="text" />
+                <input name="lbsWeightTwo" type="text" />
               </div>
               <div>
                 <label htmlFor="Shipment Description">
                   Shipment Description
                 </label>
-                <input type="text" />
+                <input name="shipmentDescriptionTwo" type="text" />
               </div>
             </div>
             <div className="unit-type-row">
               <div className="col-1">
-                <input type="checkbox" name="Suitcases" />
+                <input type="checkbox" name="suitcases" />
                 <label htmlFor="Suitcases">Suitcases</label>
               </div>
               <div>
                 <label htmlFor="Number of Suitcases">Number of Suitcases</label>
-                <input type="text" />
+                <input name="suitcaseNumber" type="text" />
               </div>
               <div>
                 <label htmlFor="Weight in lbs">Weight in lbs</label>
-                <input type="text" />
+                <input name="lbsWeightThree" type="text" />
               </div>
               <div>
                 <label htmlFor="Shipment Description">
                   Shipment Description
                 </label>
-                <input type="text" />
+                <input name="shipmentDescriptionThree" type="text" />
               </div>
             </div>
             <div className="unit-type-row">
               <div className="col-1">
-                <input type="checkbox" name="Bags" />
+                <input type="checkbox" name="bags" />
                 <label htmlFor="Bags">Bags</label>
               </div>
               <div>
                 <label htmlFor="Number of Bags">Number of Bags</label>
-                <input type="text" />
+                <input name="bagsNumber" type="text" />
               </div>
               <div>
                 <label htmlFor="Weight in lbs">Weight in lbs</label>
-                <input type="text" />
+                <input name="lbsWeightFour" type="text" />
               </div>
               <div>
                 <label htmlFor="Shipment Description">
                   Shipment Description
                 </label>
-                <input type="text" />
+                <input name="shipmentDescriptionFour" type="text" />
               </div>
             </div>
             <div className="unit-type-row">
               <div className="col-1">
-                <input type="checkbox" name="Refrigerators" />
+                <input type="checkbox" name="кefrigerators" />
                 <label htmlFor="Refrigerators">Refrigerators</label>
               </div>
               <div>
                 <label htmlFor="Number of Refrigerators">
                   Number of Refrigerators
                 </label>
-                <input type="text" />
+                <input name="refrigeratorNumber" type="text" />
               </div>
               <div>
                 <label htmlFor="Weight in lbs">Weight in lbs</label>
-                <input type="text" />
+                <input name="lbsWeightFive" type="text" />
               </div>
               <div>
                 <label htmlFor="Shipment Description">
                   Shipment Description
                 </label>
-                <input type="text" />
+                <input name="shipmentDescriptionFive" type="text" />
               </div>
             </div>
             <div className="unit-type-row">
               <div className="col-1">
-                <input type="checkbox" name=" Washing Machines" />
+                <input type="checkbox" name=" washingMachines" />
                 <label htmlFor="Washing Machines">Washing Machines</label>
               </div>
               <div>
                 <label htmlFor="Number of Washing Machines">
                   Washing Machines
                 </label>
-                <input type="text" />
+                <input name="washingMachinesNumber" type="text" />
               </div>
               <div>
                 <label htmlFor="Weight in lbs">Weight in lbs</label>
-                <input type="text" />
+                <input name="lbsWeightSix" type="text" />
               </div>
               <div>
                 <label htmlFor="Shipment Description">
                   Shipment Description
                 </label>
-                <input type="text" />
+                <input name="shipmentDescriptionSix" type="text" />
               </div>
             </div>
           </div>

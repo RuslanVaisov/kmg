@@ -84,7 +84,7 @@ const Contact = () => {
               <span className="form-error">Please enter your phone number</span>
             )}
             <label htmlFor="Message">Message</label>
-            <textarea cols="30" rows="10"></textarea>
+            <textarea name="message" cols="30" rows="10"></textarea>
             <button>SEND</button>
           </form>
         </div>

@@ -75,7 +75,7 @@ const CRInformation = () => {
             </div>
             <div>
               <label htmlFor="Address Line 2">Address Line 2</label>
-              <input type="text" />
+              <input name="addressTwo" type="text" />
             </div>
             <div>
               <label htmlFor="City">City</label>
@@ -228,7 +228,7 @@ const CRInformation = () => {
               <label htmlFor="Recipient address (optional)">
                 Recipient address (optional)
               </label>
-              <input type="text" />
+              <input name="recipientAddress" type="text" />
             </div>
             <div>
               <label htmlFor="Recipient phone">Recipient phone</label>
@@ -245,7 +245,7 @@ const CRInformation = () => {
             </div>
             <div>
               <label htmlFor="Alternative phone">Alternative phone</label>
-              <input type="text" />
+              <input name="recipientAltPhone" type="text" />
             </div>
             <div>
               <label htmlFor="Recipient email">Recipient email</label>

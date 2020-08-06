@@ -79,7 +79,7 @@ const RequestAQuote = () => {
             </div>
             <div>
               <label htmlFor="Address Line 2">Address Line 2</label>
-              <input type="text" />
+              <input name="addressTwo" type="text" />
             </div>
             <div>
               <label htmlFor="City">City</label>
@@ -232,7 +232,7 @@ const RequestAQuote = () => {
               <label htmlFor="Recipient address (optional)">
                 Recipient address (optional)
               </label>
-              <input type="text" />
+              <input name="recipientAddress" type="text" />
             </div>
             <div>
               <label htmlFor="Recipient phone">Recipient phone</label>
@@ -249,7 +249,7 @@ const RequestAQuote = () => {
             </div>
             <div>
               <label htmlFor="Alternative phone">Alternative phone</label>
-              <input type="text" />
+              <input name="recipientAltPhone" type="text" />
             </div>
             <div>
               <label htmlFor="Recipient email">Recipient email</label>
@@ -276,23 +276,23 @@ const RequestAQuote = () => {
             <div className="destination-country">
               <div className="destination-country-left">
                 <div>
-                  <input type="checkbox" name="Boxes" />
+                  <input type="checkbox" name="boxes" />
                   <label htmlFor="Boxes">Boxes</label>
                 </div>
                 <div>
-                  <input type="checkbox" name="Suitcases" />
+                  <input type="checkbox" name="suitcases" />
                   <label htmlFor="Suitcases">Suitcases</label>
                 </div>
                 <div>
-                  <input type="checkbox" name="Drum" />
+                  <input type="checkbox" name="drum" />
                   <label htmlFor="Drum">Drum</label>
                 </div>
                 <div>
-                  <input type="checkbox" name="Sacks" />
+                  <input type="checkbox" name="sacks" />
                   <label htmlFor="Sacks">Sacks</label>
                 </div>
                 <div>
-                  <input type="checkbox" name="Other" />
+                  <input type="checkbox" name="other" />
                   <label htmlFor="Other">Other</label>
                 </div>
               </div>
@@ -300,7 +300,7 @@ const RequestAQuote = () => {
                 <div>
                   <label htmlFor="City">City</label>
                   <input
-                    name="destinationCity"
+                    name="destinationCityTwo"
                     type="text"
                     ref={register({ required: true })}
                   />
@@ -313,7 +313,7 @@ const RequestAQuote = () => {
                 <div>
                   <label htmlFor="Recipient Name">Recipient Name</label>
                   <input
-                    name="recipientName"
+                    name="recipientNameTwo"
                     type="text"
                     ref={register({ required: true })}
                   />
@@ -330,7 +330,7 @@ const RequestAQuote = () => {
                 Description of shipment
               </label>
               <textarea
-                name="Description of shipment"
+                name="shipmentDescription"
                 cols="60"
                 rows="10"
               ></textarea>
