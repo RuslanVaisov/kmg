@@ -191,32 +191,34 @@ const Services = () => {
             </p>
           </div>
           <div className="services-row-item">
-            <Carousel
-              showArrows={false}
-              showThumbs={false}
-              showIndicators={false}
-              showStatus={false}
-              autoPlay={true}
-              infiniteLoop
-              interval={2000}
-              stopOnHover={false}
-            >
-              <div>
-                <img alt="kmg-service" src={car1} />
-              </div>
-              <div>
-                <img alt="kmg-service" src={car2} />
-              </div>
-              <div>
-                <img alt="kmg-service" src={car3} />
-              </div>
-              <div>
-                <img alt="kmg-service" src={car4} />
-              </div>
-              <div>
-                <img alt="kmg-service" src={car5} />
-              </div>
-            </Carousel>
+            <a href="https://kmgglobalcom.godaddysites.com/">
+              <Carousel
+                showArrows={false}
+                showThumbs={false}
+                showIndicators={false}
+                showStatus={false}
+                autoPlay={true}
+                infiniteLoop
+                interval={2000}
+                stopOnHover={false}
+              >
+                <div>
+                  <img alt="kmg-service" src={car1} />
+                </div>
+                <div>
+                  <img alt="kmg-service" src={car2} />
+                </div>
+                <div>
+                  <img alt="kmg-service" src={car3} />
+                </div>
+                <div>
+                  <img alt="kmg-service" src={car4} />
+                </div>
+                <div>
+                  <img alt="kmg-service" src={car5} />
+                </div>
+              </Carousel>
+            </a>
             <h3>Used & New Cars</h3>
             <p>
               We offer freight forwarding by organizing shipments for companies

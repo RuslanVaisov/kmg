@@ -18,21 +18,21 @@ const Footer = () => {
       </div>
       <div className="social-media">
         <a
-          href="https://www.facebook.com/"
+          href="https://www.facebook.com/KMGLOGISTICS"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img src={facebook} alt="facebook" />
         </a>
         <a
-          href="https://www.instagram.com/"
+          href="https://www.instagram.com/kmg_global_"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img src={instagram} alt="instagram" />
         </a>
         <a
-          href="https://www.linkedin.com/"
+          href="https://www.linkedin.com/company/kmg-global"
           target="_blank"
           rel="noopener noreferrer"
         >

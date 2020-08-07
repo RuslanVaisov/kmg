@@ -42,14 +42,12 @@ const Contact = () => {
           <div className="contact-row-item">
             <img src={maps} alt="maps" />
             <p>
-              6802 Industrial Dr. Unit <br /> 101 Beltsville. MD 20705
+              18851 NE 29th Ave <br /> Suite 700 Aventura, FL 33180
             </p>
           </div>
           <div className="contact-row-item">
             <img src={phone} alt="maps" />
-            <p>
-              Main: 240.624.4800 <br /> Direct: 240.624.4802
-            </p>
+            <p>+1407-751-8885</p>
           </div>
           <div className="contact-row-item">
             <img src={clock} alt="maps" />
