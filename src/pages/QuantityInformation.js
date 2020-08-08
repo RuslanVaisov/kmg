@@ -20,7 +20,7 @@ const QuantityInformation = () => {
       method: "POST",
 
       // enter the url here
-      url: "/api/quantity-information",
+      url: "/quantity.php",
 
       data,
     }).then((response) => {

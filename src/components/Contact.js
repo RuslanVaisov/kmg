@@ -21,7 +21,7 @@ const Contact = () => {
       method: "POST",
 
       // enter the url here
-      url: "/api/contacts",
+      url: "/contact.php",
 
       data,
     }).then((response) => {

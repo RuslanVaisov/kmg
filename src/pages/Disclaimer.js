@@ -19,7 +19,7 @@ const Disclaimer = () => {
       method: "POST",
 
       // enter the url here
-      url: "/api/disclaimer",
+      url: "/disclaimer.php",
 
       data,
     }).then((response) => {

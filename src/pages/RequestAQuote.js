@@ -20,7 +20,7 @@ const RequestAQuote = () => {
       method: "POST",
 
       // enter the url here
-      url: "/api/request-a-quote",
+      url: "/qoute.php",
 
       data,
     }).then((response) => {

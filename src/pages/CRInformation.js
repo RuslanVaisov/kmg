@@ -16,7 +16,7 @@ const CRInformation = () => {
       method: "POST",
 
       // enter the url here
-      url: "/api/customer-receiver-information",
+      url: "/customer_reciever.php",
 
       data,
     }).then((response) => {
